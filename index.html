@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Internet & Social Time Tracker</h1>
+    
+    <div class="tracker">
+        <label for="activity-type">Select Activity:</label>
+        <select id="activity-type">
+            <option value="internet">Internet</option>
+            <option value="social">Social Media</option>
+        </select>
+    </div>
+
+    <div>
+        <p>Time spent on Internet: <span id="internet-time">0</span> minutes</p>
+        <p>Time spent on Social Media: <span id="social-time">0</span> minutes</p>
+    </div>
+
+    <button id="start-tracking">Start Tracking</button>
+    <button id="stop-tracking">Stop Tracking</button>
+    <button id="reset-tracking">Reset Tracking</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
