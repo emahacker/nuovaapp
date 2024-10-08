@@ -51,10 +51,10 @@ resetTrackingButton.addEventListener('click', resetTracking);function sendEmailR
     let templateParams = {
         social_time: Math.round(socialTime),
         web_time: Math.round(webTime),
-        user_email: "user@example.com" // Puoi raccogliere questa email dall'utente
+        user_email: "emanuele.xuffranieri@gmail.com" // Puoi raccogliere questa email dall'utente
     };
 
-    emailjs.send('TUO_SERVICE_ID', 'TUO_TEMPLATE_ID', templateParams)
+    emailjs.send('service_5cha8ql', 'template_ekclmnd', templateParams)
         .then(function(response) {
             console.log('Email inviata con successo!', response.status, response.text);
         }, function(error) {
