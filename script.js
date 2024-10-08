@@ -61,11 +61,36 @@ resetTrackingButton.addEventListener('click', resetTracking);function sendEmailR
             console.log('Errore durante l\'invio dell\'email.', error);
         });
 }
+// Inizializzazione di EmailJS con il tuo User ID
+(function() {
+   emailjs.init("service_5cha8ql"); // Sostituisci con il tuo USER ID da EmailJS
+})();
+
+// Funzione per inviare l'email con il report del tempo trascorso su social e web
 function sendEmailReport() {
     let templateParams = {
-        social_time: Math.round(socialTime),
-        web_time: Math.round(webTime),
-        user_email: "emanuele.zuffranieri@gmail.com" // Puoi raccogliere questa email dall'utente
+        social_time: Math.round(socialTime), // Tempo sui social
+        web_time: Math.round(webTime),       // Tempo sul web
+        user_email: "emanuele.zuffranieri@gmail.com" // Tua email
+    };
+
+    emailjs.send('// Inizializzazione di EmailJS con il tuo User ID
+(function() {
+   emailjs.init("service_5cha8ql"); // Sostituisci con il tuo USER ID da EmailJS
+})();
+
+// Funzione per inviare l'email con il report del tempo trascorso su social e web
+// Inizializzazione di EmailJS con il tuo User ID
+(function() {
+   emailjs.init("service_5cha8ql"); // Sostituisci con il tuo USER ID da EmailJS
+})();
+
+// Funzione per inviare l'email con il report del tempo trascorso su social e web
+function sendEmailReport() {
+    let templateParams = {
+        social_time: Math.round(socialTime), // Tempo sui social
+        web_time: Math.round(webTime),       // Tempo sul web
+        user_email: "emanuele.zuffranieri@gmail.com" // Tua email
     };
 
     emailjs.send('service_5cha8ql', 'template_vt8tycd', templateParams)
