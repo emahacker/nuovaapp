@@ -47,4 +47,31 @@ function updateUI() {
 
 startTrackingButton.addEventListener('click', startTracking);
 stopTrackingButton.addEventListener('click', stopTracking);
-resetTrackingButton.addEventListener('click', resetTracking);
+resetTrackingButton.addEventListener('click', resetTracking);function sendEmailReport() {
+    let templateParams = {
+        social_time: Math.round(socialTime),
+        web_time: Math.round(webTime),
+        user_email: "user@example.com" // Puoi raccogliere questa email dall'utente
+    };
+
+    emailjs.send('TUO_SERVICE_ID', 'TUO_TEMPLATE_ID', templateParams)
+        .then(function(response) {
+            console.log('Email inviata con successo!', response.status, response.text);
+        }, function(error) {
+            console.log('Errore durante l\'invio dell\'email.', error);
+        });
+}
+function sendEmailReport() {
+    let templateParams = {
+        social_time: Math.round(socialTime),
+        web_time: Math.round(webTime),
+        user_email: "user@example.com" // Puoi raccogliere questa email dall'utente
+    };
+
+    emailjs.send('TUO_SERVICE_ID', 'TUO_TEMPLATE_ID', templateParams)
+        .then(function(response) {
+            console.log('Email inviata con successo!', response.status, response.text);
+        }, function(error) {
+            console.log('Errore durante l\'invio dell\'email.', error);
+        });
+}
