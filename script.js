@@ -68,7 +68,7 @@ function sendEmailReport() {
         user_email: "user@example.com" // Puoi raccogliere questa email dall'utente
     };
 
-    emailjs.send('TUO_SERVICE_ID', 'TUO_TEMPLATE_ID', templateParams)
+    emailjs.send('service_5cha8ql', 'template_vt8tycd', templateParams)
         .then(function(response) {
             console.log('Email inviata con successo!', response.status, response.text);
         }, function(error) {
